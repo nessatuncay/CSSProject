@@ -4,21 +4,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 
 :root {
-  --color-primary: #3a00ff;
-  --color-primary-alt: #6f6ffd;
-  --color-secondary: #d42257;
-  --color-background: #d2fbf7;
-  --color-text: #412d86;
-  --color-light: #fff;
-  --color-anchor: #3a00ff;
+  --color-primary: #340abe;
+  --color-primary-alt: #5757e6;
+  --color-secondary: #ecead6;
+  --color-text: #dedbc1;
+  --color-light: #829ebd;
+  --color-anchor: #eaebc6;
   --font-family: "Great Vibes", sans-serif;
   --font-weight-strong: 500;
-  --font-size-h1: 6rem;
-  --font-size-h2: 3rem;
+  --font-size-h1: 5rem;
+  --font-size-h2: 4rem;
   --font-size-h3: 2rem;
   --font-size-h4: 1.35rem;
-  --font-size-text: 1.15rem;
-  --border-radius: 8px;
+  --font-size-text: 1.80rem;
+  --border-radius: 3px;
 }
 
 /*
@@ -54,6 +53,7 @@ body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
+  background: linear-gradient(rgb(1, 5, 79) 0%,rgb(7, 12, 106) 35%, rgb(39, 45, 163) 65%, rgb(77, 82, 191) 85%, rgb(177, 179, 225) 100%);
 }
 
 /* Make images easier to work with */
@@ -125,6 +125,7 @@ p {
 
 article .container > ul:not(.features) > li + li,
 article .container > ol > li + li {
+  border-radius: 45%;
   margin-top: 1rem;
 }
 article .container * + h2 {
@@ -385,7 +386,7 @@ nav ul li {
 }
 
 #contribute {
-  background: repeating-linear-gradient(-45deg, transparent, transparent 10px, #b3f8f1 10px, #b3f8f1 18px);
+  
 }
 #contribute section {
   padding: 2rem;
