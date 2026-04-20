@@ -5,6 +5,8 @@
 
 
 /* Set core body defaults */
+/*started with the base from the original website and then added new font, sparkles in the background,
+put them in different areas with different sizes*/
 body 
 {
   min-height: 100vh;
@@ -25,12 +27,16 @@ body
     100% 10%, 45% 65%, 40% 80%, 30% 50%, 85% 55%, center;
 }
 
+
+/*makes scrolling so much more soother*/
 html 
 {
   scroll-behavior: smooth;
 }
 
-section::before {
+/*added 5 stars above sections to make the separations look prettier*/
+section::before 
+{
   content: "✦ ✦ ✦ ✦ ✦";
   display: block;
   text-align: center;
@@ -40,7 +46,9 @@ section::before {
   text-shadow: 0 0 15px rgba(249, 228, 149, 0.5);
 }
 
-section {
+/*adds like a glass effect to the sections like there is glass underneath and it makes the star blur too*/
+section 
+{
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(180, 220, 255, 0);
   border-radius: 20px;
@@ -52,12 +60,14 @@ section {
   box-shadow:0 0 20px rgba(180, 220, 255, 0.1), inset 0 0 20px rgba(255, 255, 255, 0.03);
 }
 
+/*the headers glow much quicker than the borders*/
 h1, h2, h3, h4
 {
   font-family:"Great Vibes", cursive;
   animation: starry 3s ease-in-out infinite;
 }
 
+/*this is to add the borders, their shadow and the glowing except for h1*/
 h2, h3, h4
 {
   background: rgba(19, 70, 210, 0.1);
@@ -69,6 +79,7 @@ h2, h3, h4
   animation: twinkle 15s ease-in-out infinite;
 }
 
+/*adds the glow effect to all paragraphs and lists*/
 p, li
 {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
@@ -77,20 +88,23 @@ p, li
 }
 
 
-/* Make images easier to work with */
-img {
+/* Make images easier to work with . i thought it might be useful so i left it from the original code*/
+img 
+{
   display: block;
   max-width: 100%;
 }
 
-/* Inherit fonts for inputs and buttons */
+/* Inherit fonts for inputs and buttons. not sure what it does but it seemed important */
 input,
 button,
 textarea,
-select {
+select 
+{
   font: inherit;
 }
 
+/*this is the navigation buttons area*/
 nav ul 
 {
   display: flex;
@@ -104,6 +118,7 @@ nav ul
   max-width: fit-content;
 }
 
+/*this is for the navigation buttons at the top, i made them have gradient text colors*/
 nav ul li
 {
   font-size: 2rem;
@@ -124,13 +139,14 @@ a
   display: inline-block;
 }
 
+/*this is for the double effect when you hover over hyperlinks*/
 a:hover 
 {
   text-shadow: 0 10px rgb(215, 227, 143);
   transform: scale(1.3);
 }
 
-
+/*this is the list of modern css examples and i made sure that instead of a long list they are together in rows*/
 .container ul
 {
   display: flex;
@@ -151,11 +167,13 @@ a:hover
 }
 
 article .container > ul:not(.features) > li + li,
-article .container > ol > li + li {
+article .container > ol > li + li 
+{
   border-radius: 45%;
   margin-top: 1rem;
 }
 
+/*for mobile*/
 @media (max-width: 480px) 
 {
   body 
@@ -164,7 +182,7 @@ article .container > ol > li + li {
   }
 }
 
-
+/*for computers*/
 @media (min-width: 768px) 
 {
   nav ul 
@@ -174,7 +192,9 @@ article .container > ol > li + li {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
+/*the page said i required to have this so i kept it from the original code and the skip links too*/
+@media (prefers-reduced-motion: reduce) 
+{
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
@@ -183,7 +203,8 @@ article .container > ol > li + li {
   }
 }
 
-.skip-link {
+.skip-link 
+{
   position: absolute;
   top: auto;
   left: -10000px;
@@ -195,7 +216,8 @@ article .container > ol > li + li {
   overflow: hidden;
 }
 
-.skip-link:focus {
+.skip-link:focus 
+{
   position: fixed;
   top: 0;
   left: 0;
@@ -219,7 +241,8 @@ article .container > ol > li + li {
   }
 }
 
-@keyframes starry {
+@keyframes starry 
+{
 
   0%,
   100% {
