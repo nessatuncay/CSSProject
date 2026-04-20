@@ -50,6 +50,7 @@ nav ul
 {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 1.5rem;
   padding: 0;
   margin: 0 auto;
@@ -71,6 +72,18 @@ header a span
   size: 1rem
 }
 
+a
+{
+  text-decoration: none;
+  transition: text-shadow 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+a:hover 
+{
+  text-shadow: 0 10px rgb(215, 227, 143);
+  transform: scale(1.3);
+}
 
 
 .container ul
@@ -100,3 +113,20 @@ article .container > ol > li + li {
   margin-top: 1rem;
 }
 
+@media (max-width: 480px) 
+{
+  body 
+  {
+    font-size: 110%;
+  }
+}
+
+
+@media (min-width: 768px) 
+{
+  nav ul 
+  {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
