@@ -25,6 +25,11 @@ body
     100% 10%, 45% 65%, 40% 80%, 30% 50%, 85% 55%, center;
 }
 
+html 
+{
+  scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4
 {
   font-family:"Great Vibes", cursive;
@@ -41,6 +46,14 @@ h2, h3, h4
   box-shadow: 0 0 22px rgba(246, 241, 216, 0.4);
   animation: twinkle 15s ease-in-out infinite;
 }
+
+p, li
+{
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
 
 /* Make images easier to work with */
 img {
